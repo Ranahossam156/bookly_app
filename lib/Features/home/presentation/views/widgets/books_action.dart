@@ -8,12 +8,12 @@ class BooksAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding:  EdgeInsets.symmetric(horizontal:8),
-      child:  Row(
+      padding: EdgeInsets.symmetric(horizontal: 8),
+      child: Row(
         children: [
           Expanded(
             child: CustomButton(
-              text:'19.99€' ,
+              text: '19.99€',
               backgroundColor: Colors.white,
               textColor: Colors.black,
               borderRadius: BorderRadius.only(
@@ -22,21 +22,20 @@ class BooksAction extends StatelessWidget {
               ),
             ),
           ),
-       Expanded(
-        child: CustomButton(
-          fontSize:16,
-          text:'Free preview',
-          backgroundColor: Color(0xffEF8262),
-          textColor: Colors.black,
-          borderRadius: BorderRadius.only(
-            topRight: Radius.circular(16),
-            bottomRight: Radius.circular(16),
+          Expanded(
+            child: CustomButton(
+              fontSize: 16,
+              text: 'Free preview',
+              backgroundColor: Color(0xffEF8262),
+              textColor: Colors.black,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16),
+                bottomRight: Radius.circular(16),
+              ),
+            ),
           ),
-        ),
-      ),
         ],
       ),
     );
-    
   }
 }
